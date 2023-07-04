@@ -1,0 +1,199 @@
+/* CSS reset: */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+  box-sizing: border-box;
+	background-color: #86c2bc;
+}
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
+/* My design */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+#shade {
+	background-color: #dafcf9;
+	margin: 0px 150px 0px 150px;
+	padding: 10px;
+
+}
+
+.star1-container {
+	text-align: center;
+	margin: -10px -10px 0 -10px
+}
+
+#starfish-1 {
+	width: 100%;
+	
+}
+
+h1 {
+	position: absolute;
+  top: 30%;
+  color: white;
+  width: 83%;
+  text-align: center;
+	font-size: 5em;
+}
+
+/* navigation bar */
+
+nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+
+nav {
+	text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+	padding-top: 0;
+  /* padding: 20px; */
+	padding: 0px 100px 0px 100px;
+	font-size: 1.3em;
+}
+
+.story-button {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	padding-bottom: 20px;
+}
+
+#story {
+	padding-top: 40px;
+}
+
+#starfish-2 {
+	width: 20%;
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 20px;
+}
+
+.facts-sec {
+	padding-top: 30px;
+	clear: left;
+}
+
+.facts {	
+	font-size: 1.2em;
+	
+}
+
+.facts-sec ul li  {
+	list-style: circle;
+}
+.facts-sec ul li  {
+	margin-left: 20px;
+}
+
+#contact {
+	font-size: 1.3em;
+	margin-top: 45px;
+	margin-bottom: 20px;
+}
+
+form {
+	border: 1px solid black;
+	width: 100%;
+	padding: 20px;
+}
+
+#fullname, #email, #message {
+	display: block; 
+  width: 100%; 
+  border: none;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+h4 {
+
+	font-size: 1.2em;
+	padding-bottom: 20px;
+
+}
+
+button {
+	display: block;
+	margin-top: 10px;
+	background: none;
+	border: 1px solid black;
+	padding: 10px;
+
+}
+
+footer {
+	text-align: right;
+}
+
+footer p {
+	display: inline-block;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
