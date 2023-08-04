@@ -1,0 +1,16 @@
+.container {
+	margin: auto;
+  width: 80%;
+}
+.team {
+	background: rgb(250, 213, 158);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.content-container {
+	padding: 20px;
+}
+.team img {
+	width: 100%;
+}
