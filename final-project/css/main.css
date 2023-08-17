@@ -1,16 +1,382 @@
+
+/* Basic text info */
+h1 {
+  font-size: 3.052rem;
+}
+h2 {font-size: 2.441rem;}
+h3 {font-size: 1.953rem;}
+h4 {font-size: 1.563rem;}
+h5 {font-size: 1.25rem;}
+small, .text_small {font-size: 0.8rem;}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+p {line-height: 1.5rem}
+html {
+	font-family: 'Open Sans', sans-serif;
+	background: white;;
+}
 .container {
-	margin: auto;
-  width: 80%;
+	margin: 0 20px;
+	max-width: 1200px;
 }
-.team {
-	background: rgb(250, 213, 158);
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+/* Header and Navbar */
+header {
+	background: #222;
 }
-.content-container {
-	padding: 20px;
+header .header-colour {
+	background: #c78c06;
+}
+header .home-btn {
+	background: #c78c06;
+}
+header .home-btn a{
+	color: #222;
+}
+nav .nav-highlight {
+	display: block;
+}
+nav {
+	text-align: center;
+}
+nav ul li {
+	padding: 1.5rem 0;
+}
+nav ul li a {
+	color: #c78c06;
+	text-decoration: none;
+	font-size: 18px;
+}
+/* Nav search bar */
+.search-bar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+	padding-bottom: 1rem;
+}
+.search-input {
+  width: 100%;
+	padding: .5rem 0rem ;
+	font-size: 18px;
+}
+/* Search bar search icon */
+.search-icon {
+  background: none;
+  border: 1px solid #c78c06;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+	/* This changes the colour of my search icon */
+  color: #c78c06; 
+}
+/* Call To Action (Main Banner) */
+.main-banner-background {
+	background-image: url(/final-project/images/main-banner.jpg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.main-banner-shade {
+	background: rgba(0, 0, 0, 0.6);
+}
+.main-banner-content h1 {
+	color: white;
+	font-size: 4.5rem;
+	line-height: 7rem;
+	padding: 3rem 0;
+}
+.main-banner-content p {
+	color: white;
+	padding-bottom: 1rem;
+}
+.connect-btn {
+  display: inline-block;
+  padding: 2rem;
+  background-color: #c78c06;
+  color: #222;
+  text-decoration: none;
+	font-size: 18px;
+	margin-bottom: 1rem;
+}
+/* About us section */
+.about-us-image img {
+	width: 100%;
+}
+.about-us {
+	background: #ffe6ac;
+	padding-top: 1rem;
+}
+.about-us-text h2 {
+	padding-bottom: 1.5rem;
+}
+.about-us-text p {
+	padding: .5rem 0;
+}
+.about-us-text {
+	padding: 1.5rem 0
+}
+/* Services Section */
+.services h2 {
+	padding-top: 2.5rem;
+}
+.service-card img {
+	width: 100%;
+}
+.service-card {
+	background:#ffe6ac;
+	margin-top: 1rem;
+}
+.service-card h3 {
+	padding: 2rem 0rem 0rem 1rem;
+}
+.service-card p {
+	padding: 1rem;
+}
+.service-btn {
+	display: inline-block;
+  padding: 2rem;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+	font-size: 18px;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+}
+/* Our Vision section */
+.vision {
+	background-image: url(/final-project/images/vision.jpg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+	height: 30vh;
+	margin-top: 2rem;
+}
+.vision-content {
+	color: white;
+}
+.vision-content h3 {
+	padding: 2rem .5rem;
+}
+.vision-btn {
+	display: inline-block;
+  padding: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+	border: 1px solid #ffe6ac;
+  color: white;
+  text-decoration: none;
+	font-size: 24px;
+	margin-top: 1rem;
+}
+/* Our Team section */
+.team h2 {
+	margin-top: 2.5rem;
 }
 .team img {
 	width: 100%;
+}
+.member-card {
+	background: #ffe6ac;
+	margin-top: 1rem;
+}
+.member-card h3 {
+	padding: 1rem;
+}
+.member-card p:first-of-type {
+	margin: 0rem 1rem 1rem 1rem;
+	border-bottom: 2px solid #c78c06; 
+	font-weight: bold;
+}
+.member-card p:last-of-type {
+	padding: 0 1rem 1rem 1rem;
+}
+/* Contact section */
+.contact-us h2 {
+	margin: 4rem 0 2rem 0;
+}
+.contact-us h3 {
+	margin: 2rem 0 1rem 0;
+}
+/* Contact form */
+.contact-us label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+  width: 100%;
+  padding: .5rem 0 .5rem 0;
+  margin-bottom: 15px;
+}
+.contact-us input[type="submit"] {
+  background-color: #222;
+  color: #c78c06;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+	font-size: 16px;
+}
+.contact-us input[type="submit"]:hover {
+  background-color: #111;
+}
+/* Hours form */
+.hours table {
+  width: 100%;	
+}
+.hours h3 {
+  margin: 1rem 0;
+}
+.hours th {
+  text-align: center;
+	background-color: #ffe6ac;
+}
+.hours th, .hours td {
+  border: 1px solid #222;
+  padding: 1rem;
+}
+/* Location section (google map) */
+.location h3 {
+	margin: 1rem 0;
+}
+.location iframe {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+/* Footer section */
+footer small{
+	display: block;
+}
+.copyright-bg {
+	background: #222;
+	padding: 1rem;
+}
+.copyright small{
+	color: #c78c06;
+	padding: .5rem;
+}
+.copyright a {
+	color: #c78c06
+}
+/* min-width media query for the screen size of 760px and above */
+@media screen and (min-width: 760px) {
+	.container {
+		margin: auto;
+	}
+	/* Header and Nav bar */
+	header .header-colour {
+		background: none;
+	}
+	header .navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 10vh;
+	}
+	header nav ul {
+		display: flex;
+	}
+	nav ul li {
+		padding: 1rem 2.5rem;	
+	}
+	.search-bar {
+		padding: 0rem;
+		width: auto;
+	}
+	.logo img {
+		width: 75%;
+	}
+	/* Main Banner */
+	.main-banner-shade {
+		padding: 1rem;
+	}
+	.main-banner-content h1 {
+		font-size: 6rem;
+	}
+	/* About Us section */
+	.about-us h2, .about-us p {
+		padding: 0;
+	}
+	.about-us-content {
+		display: flex;
+		align-items: center;
+	}
+	.about-us-image {
+		flex: 1;
+		padding-bottom: 1rem;
+	}
+	.about-us-text {
+		flex: 1;
+		padding: 1rem;
+	}
+	/* Services section */
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	.service-card {
+		flex: 1;
+	}
+	.card1, .card2 {
+		flex: 1 1 40%;
+	}
+	.card3, .card4, .card5 {
+		flex: 30%;
+	}
+	.service-card a {
+		display: block;
+		text-align: center
+		;
+	}
+	/* Vision section */
+	.vision-content h3 {
+		padding: 2.5rem .5rem;
+	}
+	/* Our Team section */
+	.member-card {
+		margin: 0rem;
+	}
+	.member1 {
+		display: flex;
+	}
+	.johnimage {
+		flex: 1;
+	}
+	.johninfo {
+		flex: 1;
+	}
+	.member2 {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.bobimage {
+		flex: 1;
+	}
+	.bobinfo {
+		flex: 1;
+	}
+	/* Contact Us section (form, location, table GRID) */
+	.contactgrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: 
+			"form location"
+			"table table";
+			gap: 1rem;
+	}
+	.contact {
+		grid-area: form;
+	}
+	.location {
+		grid-area: location;
+	}
+	.hours {
+		grid-area: table;
+		margin-bottom: 1rem;
+	}
 }
